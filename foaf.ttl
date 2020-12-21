@@ -1,1 +1,26 @@
+@prefix admin: <http://webns.net/mvcb/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<https://raw.githubusercontent.com/trajkovskifilip/web-based-systems-homework/main/foaf.ttl> a foaf:PersonalProfileDocument ;
+    admin:errorReportsTo <mailto:leigh@ldodds.com> ;
+    admin:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+    foaf:maker <https://raw.githubusercontent.com/trajkovskifilip/web-based-systems-homework/main/foaf.ttl#me> ;
+    foaf:primaryTopic <https://raw.githubusercontent.com/trajkovskifilip/web-based-systems-homework/main/foaf.ttl#me> .
+
+<https://raw.githubusercontent.com/trajkovskifilip/web-based-systems-homework/main/foaf.ttl#me> a foaf:Person ;
+    foaf:family_name "Trajkovski" ;
+    foaf:givenname "Filip" ;
+    foaf:homepage <https://www.linkedin.com/in/trajkovski-filip/> ;
+    foaf:knows [ a foaf:Person ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/filip-zdraveski/WBS_D5/main/foaf.ttl> ;
+            foaf:mbox_sha1sum "c00f4ace5315796f13f7d82a722dd797d5c73697" ;
+            foaf:name "Filip Zdraveski" ],
+        [ a foaf:Person ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/Karlicic/WBS/main/foaf.ttl> ;
+            foaf:mbox_sha1sum "6e2b748eaee2bdf46234c4c0f3af31b1f04dda86" ;
+            foaf:name "Marta Karlichikj" ] ;
+    foaf:mbox_sha1sum "2030ce8d613ccd32d88648f7ee7f347509e07a86" ;
+    foaf:name "Filip Trajkovski" ;
+    foaf:schoolHomepage <https://www.finki.ukim.mk/> ;
+    foaf:title "Mr" .
